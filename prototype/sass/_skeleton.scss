@@ -1,0 +1,254 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+
+/* Table of Contents
+==================================================
+    #Base 960 Grid
+    #Tablet (Portrait)
+    #Mobile (Portrait)
+    #Mobile (Landscape)
+    #Clearing */
+
+$font-size-base: 16;
+
+
+/* #Base 960 Grid
+================================================== */
+    .wrapper {width: 95%; max-width: (1050em / $font-size-base);}
+    .container                                  { position: relative; width: (960em / $font-size-base); margin: 0 auto; padding: 0 }
+    .container .column,
+    .container .columns                         { float: left; display: inline; margin-left: (10em / $font-size-base); margin-right: (10em / $font-size-base) }
+    .row                                        { margin-bottom: (20em / $font-size-base) }
+
+    /* Nested Column Classes */
+    .column.alpha, .columns.alpha               { margin-left: 0 }
+    .column.omega, .columns.omega               { margin-right: 0 }
+
+    /* Base Grid */
+    .container .one.column,
+    .container .one.columns                     { width: (40em / $font-size-base)  }
+    .container .two.columns                     { width: (100em / $font-size-base) }
+    .container .three.columns                   { width: (160em / $font-size-base) }
+    .container .four.columns                    { width: (220em / $font-size-base) }
+    .container .five.columns                    { width: (280em / $font-size-base) }
+    .container .six.columns                     { width: (340em / $font-size-base) }
+    .container .seven.columns                   { width: (400em / $font-size-base) }
+    .container .eight.columns                   { width: (460em / $font-size-base) }
+    .container .nine.columns                    { width: (520em / $font-size-base) }
+    .container .ten.columns                     { width: (580em / $font-size-base) }
+    .container .eleven.columns                  { width: (640em / $font-size-base) }
+    .container .twelve.columns                  { width: (700em / $font-size-base) }
+    .container .thirteen.columns                { width: (760em / $font-size-base) }
+    .container .fourteen.columns                { width: (820em / $font-size-base) }
+    .container .fifteen.columns                 { width: (880em / $font-size-base) }
+    .container .sixteen.columns                 { width: (940em / $font-size-base) }
+
+    .container .one-third.column                { width: (300em / $font-size-base) }
+    .container .two-thirds.column               { width: (620em / $font-size-base) }
+
+    /* Offsets */
+    .container .offset-by-one                   { padding-left: (60em / $font-size-base)  }
+    .container .offset-by-two                   { padding-left: (120em / $font-size-base) }
+    .container .offset-by-three                 { padding-left: (180em / $font-size-base) }
+    .container .offset-by-four                  { padding-left: (240em / $font-size-base) }
+    .container .offset-by-five                  { padding-left: (300em / $font-size-base) }
+    .container .offset-by-six                   { padding-left: (360em / $font-size-base) }
+    .container .offset-by-seven                 { padding-left: (420em / $font-size-base) }
+    .container .offset-by-eight                 { padding-left: (480em / $font-size-base) }
+    .container .offset-by-nine                  { padding-left: (540em / $font-size-base) }
+    .container .offset-by-ten                   { padding-left: (600em / $font-size-base) }
+    .container .offset-by-eleven                { padding-left: (660em / $font-size-base) }
+    .container .offset-by-twelve                { padding-left: (720em / $font-size-base) }
+    .container .offset-by-thirteen              { padding-left: (780em / $font-size-base) }
+    .container .offset-by-fourteen              { padding-left: (840em / $font-size-base) }
+    .container .offset-by-fifteen               { padding-left: (900em / $font-size-base) }
+
+    // Larger Sizes
+    // @media screen and (min-width: (1280em / $font-size-base) ) {
+    //     body {font-size: 1.125em !important}
+    //     .list-thumbnails li img {width: (150em / $font-size-base) !important;}
+    // }
+
+
+/* #Tablet (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 768px  */
+
+    @media only screen and (min-width: (768em / $font-size-base) ) and (max-width: (1049em / $font-size-base) ) {
+        // Mine
+        .wrapper { max-width: (860em / $font-size-base) !important; }
+        .right-col {width: 100% !important; float: none !important }
+        .left-col {float: none!important}
+
+        //
+        .container                                  { width: (768em / $font-size-base) }
+        .container .column,
+        .container .columns                         { margin-left: (10em / $font-size-base); margin-right: (10em / $font-size-base) }
+        .column.alpha, .columns.alpha               { margin-left: 0; margin-right: (10em / $font-size-base) }
+        .column.omega, .columns.omega               { margin-right: 0; margin-left: (10em / $font-size-base) }
+        .alpha.omega                                { margin-left: 0; margin-right: 0; }
+
+        .container .one.column,
+        .container .one.columns                     { width: (28em / $font-size-base) }
+        .container .two.columns                     { width: (76em / $font-size-base) }
+        .container .three.columns                   { width: (124em / $font-size-base) }
+        .container .four.columns                    { width: (172em / $font-size-base) }
+        .container .five.columns                    { width: (220em / $font-size-base) }
+        .container .six.columns                     { width: (268em / $font-size-base) }
+        .container .seven.columns                   { width: (316em / $font-size-base) }
+        .container .eight.columns                   { width: (364em / $font-size-base) }
+        .container .nine.columns                    { width: (412em / $font-size-base) }
+        .container .ten.columns                     { width: (460em / $font-size-base) }
+        .container .eleven.columns                  { width: (508em / $font-size-base) }
+        .container .twelve.columns                  { width: (556em / $font-size-base) }
+        .container .thirteen.columns                { width: (604em / $font-size-base) }
+        .container .fourteen.columns                { width: (652em / $font-size-base) }
+        .container .fifteen.columns                 { width: (700em / $font-size-base) }
+        .container .sixteen.columns                 { width: (748em / $font-size-base) }
+
+        .container .one-third.column                { width: (236em / $font-size-base) }
+        .container .two-thirds.column               { width: (492em / $font-size-base) }
+
+        /* Offsets */
+        .container .offset-by-one                   { padding-left: (48em / $font-size-base) }
+        .container .offset-by-two                   { padding-left: (96em / $font-size-base) }
+        .container .offset-by-three                 { padding-left: (144em / $font-size-base) }
+        .container .offset-by-four                  { padding-left: (192em / $font-size-base) }
+        .container .offset-by-five                  { padding-left: (240em / $font-size-base) }
+        .container .offset-by-six                   { padding-left: (288em / $font-size-base) }
+        .container .offset-by-seven                 { padding-left: (336em / $font-size-base) }
+        .container .offset-by-eight                 { padding-left: (384em / $font-size-base) }
+        .container .offset-by-nine                  { padding-left: (432em / $font-size-base) }
+        .container .offset-by-ten                   { padding-left: (480em / $font-size-base) }
+        .container .offset-by-eleven                { padding-left: (528em / $font-size-base) }
+        .container .offset-by-twelve                { padding-left: (576em / $font-size-base) }
+        .container .offset-by-thirteen              { padding-left: (624em / $font-size-base) }
+        .container .offset-by-fourteen              { padding-left: (672em / $font-size-base) }
+        .container .offset-by-fifteen               { padding-left: (720em / $font-size-base) }
+    }
+
+
+/*  #Mobile (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 320px */
+
+    @media only screen and (max-width: (767em / $font-size-base) ) {
+        .container { width: (300em / $font-size-base) }
+        .container .columns,
+        .container .column { margin: 0 }
+
+        .container .one.column,
+        .container .one.columns,
+        .container .two.columns,
+        .container .three.columns,
+        .container .four.columns,
+        .container .five.columns,
+        .container .six.columns,
+        .container .seven.columns,
+        .container .eight.columns,
+        .container .nine.columns,
+        .container .ten.columns,
+        .container .eleven.columns,
+        .container .twelve.columns,
+        .container .thirteen.columns,
+        .container .fourteen.columns,
+        .container .fifteen.columns,
+        .container .sixteen.columns,
+        .container .one-third.column,
+        .container .two-thirds.column  { width: (300em / $font-size-base) }
+
+        /* Offsets */
+        .container .offset-by-one,
+        .container .offset-by-two,
+        .container .offset-by-three,
+        .container .offset-by-four,
+        .container .offset-by-five,
+        .container .offset-by-six,
+        .container .offset-by-seven,
+        .container .offset-by-eight,
+        .container .offset-by-nine,
+        .container .offset-by-ten,
+        .container .offset-by-eleven,
+        .container .offset-by-twelve,
+        .container .offset-by-thirteen,
+        .container .offset-by-fourteen,
+        .container .offset-by-fifteen { padding-left: 0; }
+
+    }
+
+
+/* #Mobile (Landscape)
+================================================== */
+
+    /* Note: Design for a width of 480px */
+
+    @media only screen and (min-width: (480em / $font-size-base) ) and (max-width: (767em / $font-size-base) ) {
+        .container { width: (420em / $font-size-base) }
+        .container .columns,
+        .container .column { margin: 0; }
+
+        .container .one.column,
+        .container .one.columns,
+        .container .two.columns,
+        .container .three.columns,
+        .container .four.columns,
+        .container .five.columns,
+        .container .six.columns,
+        .container .seven.columns,
+        .container .eight.columns,
+        .container .nine.columns,
+        .container .ten.columns,
+        .container .eleven.columns,
+        .container .twelve.columns,
+        .container .thirteen.columns,
+        .container .fourteen.columns,
+        .container .fifteen.columns,
+        .container .sixteen.columns,
+        .container .one-third.column,
+        .container .two-thirds.column { width: (420em / $font-size-base) }
+    }
+
+
+/* #Clearing
+================================================== */
+
+    /* Self Clearing Goodness */
+    .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+    /* Use clearfix class on parent to clear nested columns,
+    or wrap each row of columns in a <div class="row"> */
+    .clearfix:before,
+    .clearfix:after,
+    .row:before,
+    .row:after {
+      content: '\0020';
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0; }
+    .row:after,
+    .clearfix:after {
+      clear: both; }
+    .row,
+    .clearfix {
+      zoom: 1; }
+
+    /* You can also use a <br class="clear" /> to clear columns */
+    .clear {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }

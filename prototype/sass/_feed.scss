@@ -1,0 +1,149 @@
+//
+//
+//	Feed
+//  ========================================
+//	Main feed display content
+//	ul.feed
+//		li.feed-item
+//			a.feed-item-service.icon-{{service-name}}
+//			div.feed-item-content
+//
+
+
+.feed {
+    position: relative;
+    overflow: hidden;
+    @include box-shadow(0,0,50px,rgba(0,0,0,.4));
+    @include transition(.25s ease all);
+    //@include prefixed-transition(.25s, ease, transform);
+    -webkit-backface-visibility: hidden;
+
+    @media screen and (max-width: 620px) {
+        padding-top: (10em / $font-size-base-px);
+    } 
+
+    .icon:hover {
+    	text-decoration: none;
+    }
+
+    &.is-loading { 
+        @include translateY(180px);
+        opacity: .125;
+    }
+
+    img {
+        min-height: 100px;
+    }
+}
+
+//
+//	Feed Item
+//
+.feed__item {
+    z-index: 1;
+    border-top: 1px solid $color-border-light;
+    border-left-width: 3px;
+    border-left-style: solid;
+    padding: (20em / $font-size-base-px) (15em / $font-size-base-px);
+    position: relative;
+    background: white;
+
+    @media screen and (max-width: 600px) {
+        padding: (20em / $font-size-base-px) (7em / $font-size-base-px);
+    }
+
+    &:first-child,
+    &:last-child {
+        border-top: 0;
+    }
+
+    &.is-bottom,
+    &.is-end {
+	    background: transparent;
+	    border: 0;
+	}
+
+    &.is-bottom {
+        padding-top: (65em / $font-size-base-px);
+        padding-bottom: (65em / $font-size-base-px);
+        @include loading-psuedo-element;
+    }
+
+    &.is-end {
+        text-align: center;
+        color: white;
+        font-family: 'Euphoria Script', cursive; 
+        display: block; 
+        font-size: 4em; 
+        text-align: center; 
+        padding: 1em 0;
+    } 
+
+    //
+    // Icons
+    // 
+    &:before {
+        position: absolute;
+        font-size: (28em / $font-size-base-px);
+        left: 15px;
+
+        @media screen and (max-width: 600px) {
+            left: 8px;
+        }
+
+        @include transition(.15s ease all);
+    }
+}
+
+
+
+
+
+// 
+//
+//  Feed Items
+//  
+//  <h2.feed__item__title <a
+//  <p.feed__item__text
+//  <a.feed__item__image <img
+//
+.feed__item__title {
+    font-weight: 700;
+
+    a {
+        color: inherit;
+    }
+}
+
+.feed__item__title,
+.feed__item__text {
+    margin-left: #{$width-icon-col}px; // spacing for icons
+}
+
+// GO full width on instagram photos, 
+// only full width on dribbble photos below 600px
+.feed__item__image {
+
+    img {
+        display: block;
+        margin-top: (35em / $font-size-base-px);  
+    }       
+}
+
+//
+//
+//  Titles
+//  used for github only
+.title {
+    font-weight: bold;
+    
+    a {
+        color: inherit;
+    }
+}
+
+// Frown icon for error state when data can't be loaded from server
+.icon-frown {
+    display: block;
+    font-size: 6em;
+}

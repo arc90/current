@@ -1,0 +1,52 @@
+/* 
+ * Font Custom: bare CSS
+ */
+
+@font-face {
+  font-family: "custom-font";
+  src: url("fonts/custom-font.eot");
+  src: url("fonts/custom-font.eot?#iefix") format("embedded-opentype"),
+       url("fonts/custom-font.woff") format("woff"),
+       url("fonts/custom-font.ttf") format("truetype"),
+       url("fonts/custom-font.svg#custom-font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon-arrow-down:before,
+.icon-arrow-up:before,
+.icon-clock:before,
+.icon-dribbble:before,
+.icon-frown:before,
+.icon-github:before,
+.icon-instagram:before,
+.icon-menu:before,
+.icon-published-articles:before,
+.icon-readability:before,
+.icon-scriptogram:before,
+.icon-twitter:before,
+.icon-yelp:before {
+  font-family: "custom-font";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+.icon-arrow-down:before { content: "\f100"; }
+.icon-arrow-up:before { content: "\f101"; }
+.icon-clock:before { content: "\f102"; }
+.icon-dribbble:before { content: "\f103"; }
+.icon-frown:before { content: "\f104"; }
+.icon-github:before { content: "\f105"; }
+.icon-instagram:before { content: "\f106"; }
+.icon-menu:before { content: "\f107"; }
+.icon-published-articles:before { content: "\f108"; }
+.icon-readability:before { content: "\f109"; }
+.icon-scriptogram:before { content: "\f10a"; }
+.icon-twitter:before { content: "\f10b"; }
+.icon-yelp:before { content: "\f10c"; }

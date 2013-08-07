@@ -1,0 +1,33 @@
+//
+//
+//  Profile
+//  ========================================
+//  .profile
+//      .profile__avatar
+//      .profile__name
+//      .profile__bio
+//
+
+.profile__avatar {
+    @include border-radius(50%);
+    @include box-shadow(0 0 0 4px $color-background-light);
+    width: 100px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.profile__name {
+    color: #ddd;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: $font-size-xl;
+    font-weight: bold;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+.profile__bio {
+    color: $color-text-light;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+}

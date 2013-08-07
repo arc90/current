@@ -1,0 +1,238 @@
+//
+//
+//  Base Styles
+//  ========================================
+//
+
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+
+body {
+    background: $color-background url(images/bg.png) repeat;
+    margin: 0; padding: 0;
+    color: $color-text;
+    font: #{$font-size-base}/1.35 $font-body;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+a {
+    text-decoration: none;
+    color: $color-link;
+
+    &:hover {
+        text-decoration: underline;
+        color: darken($color-link, 7%);
+    }
+
+    &.icon:hover {
+        text-decoration: none;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.timestamp {
+    font-size: $font-size-2xs;
+    color: #aaa;
+    display: block;
+    float: right;
+    margin-left: 1em;
+    position: relative;
+    top: (3em / $font-size-base-px);
+}
+
+.header {
+    color: white;
+    font-weight: 700;
+    line-height: 50px;
+    border-bottom: 1px solid $color-background-light;
+}
+
+//
+//
+//  Layout
+//  ==============================
+//  620px for content
+//  150px for profile
+//  150px for nav
+//  --------------
+//  920px total (20px padding on each side of nav) for 960px
+
+.l-wrapper {
+    max-width: 620px;
+    position: relative;
+    margin: 0 auto;
+    width: 60%;
+
+    @media screen and (max-width: 900px) {
+        width: 95%
+    }
+    @media screen and (max-width: 800px) {
+        width: 75%
+    }
+    @media screen and (max-width: 600px) {
+        width: 100%
+    }
+}
+
+.profile {
+    margin: (20em / $font-size-base-px) auto;
+}
+
+.content {
+    position: relative;
+    min-height: 10em;
+    background: $color-background-light;
+    @include loading-psuedo-element;
+    padding: (10em / $font-size-base-px);
+
+    @media screen and (max-width: 600px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.nav-secondary__select {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+
+    .profile {
+        position: relative;
+        width: 95%;
+        max-width: 620px;
+    }  
+    .wrapper {
+        margin: 0 auto;
+        width: 80%;
+        padding-top: (10em / $font-size-base-px);
+    }
+    .feed-container {
+        padding-top: 10px;
+    }    
+}
+@media screen and (max-width: 700px) {
+    .wrapper {
+        width: 75%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .nav-secondary__list {
+        display: none
+    }
+    .nav-secondary__select {
+        display: block;
+    }
+    .nav-secondary {
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 0 (10em / $font-size-base-px);
+        background: $color-background-light;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    .feed-container {
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+
+
+.align-center {
+    text-align: center;
+}
+
+
+
+.no-js {
+    text-align: center;
+}
+
+.nav-top {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    display: block;
+    font-size: 1.5em;
+    width: 1.75em;
+    height: 1.75em;
+    line-height: 1.75em;
+    text-align: center;
+    @include border-radius(2px);
+    background: $color-background-light;
+    color: $color-background;
+    @include transition(.25s ease background-color, .25s ease box-shadow);
+    z-index: 1000;
+
+    &:hover {
+        background-color: $color-link;
+        @include box-shadow(0 0 25px rgba($color-link, 0.5));
+
+        &:before {
+            color: $color-background;  
+        }
+    }
+
+    // If it's a touch screen device, don't show this control
+    .touch & {
+        display: none;
+    }
+
+    @media screen and (max-width: 1000px) {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+//
+//
+//  Github
+//  ========================================
+//
+.github .feed__item__text {
+    .time,
+    .gravatar {
+        display: none;
+    }
+    a {
+        color: $color-link;
+    }
+    .commits {
+        font-size: $font-size-s;
+        span {
+            display: none;
+        }
+        code {
+            font-family: $font-monospace;
+            float: left;
+            margin-right: .5em;
+        }
+        .message blockquote {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+}

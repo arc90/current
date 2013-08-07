@@ -1,0 +1,27 @@
+{
+  "fonts": [
+    "custom-font.ttf",
+    "custom-font.woff",
+    "custom-font.eot",
+    "custom-font.svg"
+  ],
+  "glyphs": [
+    "arrow-down",
+    "arrow-up",
+    "clock",
+    "dribbble",
+    "frown",
+    "github",
+    "instagram",
+    "menu",
+    "published-articles",
+    "readability",
+    "scriptogram",
+    "twitter",
+    "yelp"
+  ],
+  "templates": [
+    "_fontcustom.scss"
+  ],
+  "file_name": "custom-font"
+}

@@ -1,0 +1,155 @@
+[
+    {
+        "id":               "published-articles",
+        "title":            "Filler Content: Tools, Tips and a Dynamic Example",
+        "publisher":        "webdesign tuts+",
+        "publisher-link":   "http://webdesign.tutsplus.com/",
+        "publish-date":     "May 9, 2013",
+        "date":             1368057600,
+        "link":             "http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/filler-content-tools-tips-and-a-dynamic-example/",
+        "excerpt":          "As designing in the browser becomes more popular (and convenient), the need for helpful design tools is increasing. One set of tools that is becoming quite helpful revolves around filler content. Currently, a variety of resources exist to aid designers who need filler content, whether it be text or images."
+    },
+    {
+        "id":               "published-articles",
+        "title":            "Build a Responsive, Single Page Portfolio with Sass and Compass",
+        "publisher":        "tuts+ premium",
+        "publisher-link":   "https://tutsplus.com/",
+        "publish-date":     "Feb. 14, 2013",
+        "date":             1360800000,
+        "link":             "https://tutsplus.com/tutorial/build-a-responsive-single-page-portfolio-with-sass-and-compass/",
+        "excerpt":          "There’s a lot that goes into creating a web site these days. We’re now building websites using HTML5, CSS preprocessors, APIs, custom typography and more. Our design challenges include responsive architecture, resolution independence and multi-device interaction support. In this article, we’ll build a single page portfolio that covers aspects of all these techniques."
+    },
+    {
+        "id":               "published-articles",
+        "title":            "Bring Your Forms Up to Date with CSS3 and HTML5 Validation",
+        "publisher":        "webdesign tuts+",
+        "publisher-link":   "http://webdesign.tutsplus.com/",
+        "publish-date":     "Jan. 2, 2013",
+        "date":             1357084800,
+        "link":             "http://webdesign.tutsplus.com/tutorials/site-elements/bring-your-forms-up-to-date-with-css3-and-html5-validation/",
+        "flag":             "Reader’s Fav",
+        "excerpt":          "Let’s look at how to create a functional form which validates users’ data, client-side. With that done, we’ll cover prettying it up using CSS, including some CSS3!"
+    },
+    {
+        "id":               "published-articles",
+        "title":            "Don’t Forget the optgroup Element",
+        "publisher":        "webdesign tuts+",
+        "publisher-link":   "http://webdesign.tutsplus.com/",
+        "publish-date":     "Dec. 27, 2012",
+        "date":             1356566400,
+        "link":             "http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-optgroup-element/",
+        "excerpt":          "One popular navigation design pattern for the responsive web is collapsing your website’s navigation into a select menu. However, representing hierarchy or categorical distinctions in select elements often leads to butchered HTML with manual hyphens and lots of &nbsp; spaces. In this tutorial we’ll introduce you to a somehwat obscure HTML tag called optgroup which will provide you with an easy (and semantic) way of grouping related content in select menus."
+    },
+    {
+        "id":               "published-articles",
+        "title":            "Everything You Need to Know About the CSS Cursor Rule",
+        "publisher":        "webdesign tuts+",
+        "publisher-link":   "http://webdesign.tutsplus.com/",
+        "publish-date":     "Nov. 15, 2012",
+        "date":             1352937600,
+        "link":             "http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/everything-you-need-to-know-about-the-css-cursor-rule/",
+        "excerpt":          "While the world’s going bonkers for touch-controlled interfaces, this article will focus on the more traditional input method of the mouse. I’ll suggest an approach of progressive enhancement for handling interaction design; more specifically, an overview of the CSS cursor rule."
+    },
+    {
+        "id":               "published-articles",
+        "title":            "Quick Tip: Creating Crisp, Pixel Perfect Circles in Photoshop",
+        "publisher":        "webdesign tuts+",
+        "publisher-link":   "http://webdesign.tutsplus.com/",
+        "publish-date":     "Nov. 12, 2012",
+        "date":             1352678400,
+        "link":             "http://webdesign.tutsplus.com/tutorials/applications/quick-tip-creating-crisp-pixel-perfect-circles-in-photoshop/",
+        "excerpt":          "Achieving pixel perfection when designing UI elements can be simple thanks to Photoshop’s “snap to pixels” feature. Unfortunately, this feature is not available for the ellipse tool – creating crisp, pixel-perfect circles can therefore require additional attention to detail. I’m going to let you in on a little secret which will make “snap to pixels” available when creating circles."
+    },
+    {
+        "id":               "published-articles",
+        "title":            "Using Web Inspector to Debug Mobile Safari",
+        "publisher":        "webdesign tuts+",
+        "publisher-link":   "http://webdesign.tutsplus.com/",
+        "publish-date":     "Oct. 1, 2012",
+        "date":             1349049600,
+        "link":             "http://webdesign.tutsplus.com/tutorials/workflow-tutorials/quick-tip-using-web-inspector-to-debug-mobile-safari/",
+        "excerpt":          "Building and debugging websites and web applications for mobile devices can be a hassle. On the desktop we have powerful debugging tools; most browsers have a web inspector of some kind. But we don’t have those tools for devices like the iPhone and iPad … that is, until now!"
+    },
+    {
+        "id":               "published-articles",
+        "title":            "Harnessing the Power of Icon Standards",
+        "publisher":        "webdesign tuts+",
+        "publisher-link":   "http://webdesign.tutsplus.com/",
+        "publish-date":     "Sep. 5, 2012",
+        "date":             1346803200,
+        "link":             "http://webdesign.tutsplus.com/articles/general/harnessing-the-power-of-icon-standards/",
+        "excerpt":          "As effective as an icon’s metaphor may be, truly powerful icons get strength from their universal recognizability and conventional usage — a standardization of sorts. We’ll discuss icon standardization more in this article and then provide suggestions to a few current icon standardization movements which you can explore and incorporate into your own projects."
+    },
+    {
+        "id":               "published-articles",
+        "title":            "Super Simple Lightbox with CSS and jQuery",
+        "publisher":        "webdesign tuts+",
+        "publisher-link":   "http://webdesign.tutsplus.com/",
+        "publish-date":     "Aug. 9, 2012",
+        "date":             1344470400,
+        "link":             "http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/super-simple-lightbox-with-css-and-jquery/",
+        "flag":             "Reader’s Fav",
+        "excerpt":          "Rather than using a bloated plugin that has features you’ll never use, this tutorial shows you how to create a super simple lightbox for handling images. It’s perfect for image galleries, portfolios, and more!"
+    },
+    {
+        "id":               "published-articles",
+        "title":            "Perfectly Rotate and Mask Thumbnails With CSS3",
+        "publisher":        "webdesign tuts+",
+        "publisher-link":   "http://webdesign.tutsplus.com/",
+        "publish-date":     "Jun. 8, 2012",
+        "date":             1339113600,
+        "link":             "http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/perfectly-rotate-and-mask-thumbnails-with-css3/",
+        "flag":             "Reader’s Fav",
+        "excerpt":          "Ever seen a website showcasing image thumbnails that are slightly rotated? It’s a simple effect that adds a layer of visual personality. Saying that, if you’re not achieving the rotation effect with CSS, you’re working too hard! Learn how to do it right!"
+    },
+    {
+        "id":               "published-articles",
+        "title":            "Put Users in Control With Confirmation Feedback Buttons",
+        "publisher":        "webdesign tuts+",
+        "publisher-link":   "http://webdesign.tutsplus.com/",
+        "publish-date":     "May 17, 2012",
+        "date":             1337212800,
+        "link":             "http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/put-users-in-control-with-confirmation-feedback-buttons/",
+        "excerpt":          "This tutorial will teach you how to create a responsive web page with buttons which take on different states depending on the user’s interaction. This type of interaction is especially useful on links such as “purchase” or “delete” where it’s wise to confirm that the user indeed wants to take a specific action."
+    },
+    {
+        "id":               "published-articles",
+        "title":            "Building a Mobile-Friendly Form with Email Domain Suggestion",
+        "publisher":        "Tuts+ Premium",
+        "publisher-link":   "https://tutsplus.com/",
+        "publish-date":     "Apr. 11, 2012",
+        "date":             1334102400,
+        "link":             "https://tutsplus.com/tutorial/building-a-mobile-friendly-form-with-email-domain-suggestion/",
+        "excerpt":          "This tutorial will teach you how to create a responsive web form which goes above and beyond setting <input type=\"email\"> to help users enter email address information. This form will assist users (primarily mobile) by automatically suggesting popular email domains."
+    },
+    {
+        "id":               "published-articles",
+        "title":            "Password Strength Verification with jQuery",
+        "publisher":        "Webdesigner Depot",
+        "publisher-link":   "http://www.webdesignerdepot.com/",
+        "publish-date":     "Jan. 10, 2012",
+        "date":             1326153600,
+        "link":             "http://www.webdesignerdepot.com/2012/01/password-strength-verification-with-jquery/",
+        "excerpt":          "Many sites that require login credentials enforce a security setting often referred to as password complexity requirements. These requirements ensure that user passwords are sufficiently strong and cannot be easily broken."
+    },
+    {
+        "id":               "published-articles",
+        "title":            "Create a Stitched Web Ribbon in Photoshop",
+        "publisher":        "psd tuts+",
+        "publisher-link":   "http://psd.tutsplus.com/",
+        "publish-date":     "Dec. 9, 2011",
+        "date":             1323388800,
+        "link":             "http://psd.tutsplus.com/tutorials/interface-tutorials/stitched-web-ribbon/",
+        "excerpt":          "You don’t have to search the web for very long to find a web ribbon in the corner of an image. In this quick tip tutorial we will show you how to create your own. Let’s get started!"
+    },
+    {
+        "id":               "published-articles",
+        "title":            "Realistic Telephone Keypad Using Layer Styles",
+        "publisher":        "psd tuts+",
+        "publisher-link":   "http://psd.tutsplus.com/",
+        "publish-date":     "Oct. 21, 2011",
+        "date":             1319155200,
+        "link":             "http://psd.tutsplus.com/tutorials/interface-tutorials/telephone-keypad-photoshop/",
+        "excerpt":          "Creating real-world objects in Photoshop can be somewhat challenging. The key is to pinpoint and accentuate small details such as shadows, lighting, and extruding edges. In this tutorial, you’ll learn how to achieve acutely life-like telephone dial buttons in Photoshop using shape layers and layer styles!"
+    }
+]

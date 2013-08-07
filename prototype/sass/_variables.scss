@@ -1,0 +1,135 @@
+//
+//
+//	Colors
+//	========================================
+//
+$color-border-light:        #e9e9e9;
+$color-background:          #292929;
+$color-background-light:    #393939;
+$color-link:                #00acee;
+$color-text:				#292929;
+$color-text-light:          #666;
+
+
+//
+//
+//	Fonts
+//	========================================
+//
+$font-size-2xs:             .6875em;    // 11px     2X-Small
+$font-size-xs:              .75em;      // 12px     X-Small
+$font-size-s:               .8125em;    // 13px     Small
+$font-size-m:               .875em;     // 14px     Medium
+$font-size-base:            .9375em;    // 15px     BASE
+$font-size-l:               1.125em;    // 18px     Large
+$font-size-xl:              1.3125em;   // 21px     X-Large
+$font-size-2xl:             1.5em;      // 24px     2x-Large
+$font-size-base-px:         15;
+
+$font-body:					"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$font-monospace:            Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+
+
+//
+//
+//	Measures
+//	========================================
+//
+$width-icon-col:			45;
+$loading-height:            70;
+
+//
+//  Services
+//  =========
+//  Color the left border and icon for each section
+//
+$services:          dribbble,
+                    scriptogram,
+                    instagram,
+                    twitter,
+                    readability,
+                    github,
+                    published-articles,
+                    yelp;
+
+$service-colors:    #ea4c89,
+                    #f6701b,
+                    #634d40,
+                    #00acee,
+                    #870000,
+                    #171515,
+                    #333,
+                    #c41200;
+
+$i:1;
+@each $service in $services {
+
+    // .dribble {color: #eeeee} .instagram {} etc...
+    .#{$service} {
+        border-left-color: nth($service-colors, $i);
+        
+        &:before {
+            color: nth($service-colors, $i);
+        }
+    }
+
+    $i: $i+1;
+}
+
+//
+//
+//  Get Service Color
+//  ==============================
+//  Sass doesn't allow interpolation in variable names
+//  So we handle colors this way
+//  https://github.com/nex3/sass/issues/132#issuecomment-4335097
+//
+//  Dependencies:
+//      $brands (defined in _variables.scss)
+//      $brand-colors (defined in _variables.scss)
+//  Arguments:
+//      $search - This is the brand you're looking for in the $brands list
+//      i.e. "deloitte"
+//
+//  Note: If you're getting an error for "false is not a number for nth"
+//  It probably means a brand name is not correct in the CSS somewhere
+//
+@function get-service-color($search) {
+    $n1: index($services, $search);
+    $n2: index($service-colors, $search);
+    @if($n1) {
+        @return nth($service-colors, $n1);
+    } @else {
+        @return nth($services, $n2);
+    }
+}
+
+
+
+@mixin loading-psuedo-element {
+    &:before {
+        content: url(images/loading.gif)"loading";
+        position: absolute;
+        left: 50%;
+        top: 50px;
+        width: 50px;
+        height: 50px;
+        margin-left: -25px; // 30px width plus 5px border on each side
+        text-align: center;
+        text-transform: uppercase;
+        font-size: $font-size-2xs;
+        color: white;
+        color: rgba(255, 255, 255, 0.75);
+    }
+}
+
+// @include prefixed-transition(.25s ease transform)
+@mixin prefixed-transition($duration, $timing-function, $property) { 
+    -webkit-transition: $duration $timing-function -webkit-#{$property};
+    -moz-transition:    $duration $timing-function -moz-#{$property};
+    -o-transition:      $duration $timing-function -o-#{$property};
+    -ms-transition:     $duration $timing-function -ms-#{$property};
+    transition:         $duration $timing-function $property;
+}
+
+

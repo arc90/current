@@ -1,0 +1,102 @@
+//
+//
+//  Secondary Nav
+//  ==============================
+//  Styles the filter controls for the feed
+//  
+//  .nav-secondary
+//      ul (desktop)
+//      select (mobile)
+//
+
+.nav-secondary {
+    
+    //
+    //
+    //  List
+    //  ----------
+    //  <ul> for navigation at desktop widths
+    //
+    ul {
+        overflow: hidden;
+        position: absolute;
+        width: 175px;
+        right: -175px;
+        top: 40px;
+
+        @media screen and (max-width: 1000px) {
+            right: -58px;
+            width: 58px;
+            text-align: center;
+        }
+    }
+
+    li {
+        @include transition(.2s ease all);
+        @include border-radius(0 2px 2px 0);
+
+        &:first-child {
+            border-top: 0;
+        }
+
+        &:hover {
+            background: $color-background-light;
+
+            a {
+                text-decoration: none;
+                color: #fff;  
+            }
+            
+        }
+
+        &.is-active {
+            background: $color-background-light;
+
+            a {
+                @include translateX(0px);
+                color: #fff;
+            }
+        }
+        
+        a {
+            padding: (15em / $font-size-base-px);
+            color: #555;
+            @include transition(.25s ease all);
+            display: block;
+            //@include translateX(1em);
+            font-weight: bold;
+            text-transform: capitalize;
+            //text-align: center;
+            
+            span {
+                font-size: $font-size-s;
+                margin-left: 3em;
+                display: block;
+                overflow: hidden;
+                white-space: pre;
+                text-overflow: ellipsis;
+                margin-top: -1.75em;
+
+                @media screen and (max-width: 1000px) {
+                    display: none;
+                }  
+            }
+
+            &:before {
+                font-size: (28em / $font-size-base-px);
+            }
+        }
+    }
+
+    //
+    //
+    //  Dropdown
+    //  ----------
+    //  <select> for navigation at mobile widths
+    //
+    select {
+        width: 100%;
+        font-size: $font-size-base;  
+    }
+        
+}
